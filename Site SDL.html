@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Stars de l’éco</title>
+    
+    <!-- POLICE HORIZON via Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Horizon&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Horizon', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            position: relative;
+            animation: fadeIn 4s ease-in both;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo {
+            background-image: url('Logo.jpg'); /* Ton logo */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center top;
+            width: 100%;
+            height: 300px;
+            animation: fadeIn 4s ease-in both;
+        }
+
+        .slogan {
+            color: #FFD700;
+            font-size: 2em;
+            margin-top: 30px;
+            margin-left: 10%;
+            animation: glitch 2s infinite;
+            text-shadow: 0 0 2px #FFD700aa;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(1px, -1px); }
+            40% { transform: translate(-1px, 1px); }
+            60% { transform: translate(1px, 1px); }
+            80% { transform: translate(-1px, -1px); }
+            100% { transform: translate(0); }
+        }
+
+        .description-container {
+            position: absolute;
+            right: 2%;
+            top: 55%;
+            width: 30%;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .description {
+            font-size: 1em;
+            color: #fff;
+            text-align: justify;
+            line-height: 1.5em;
+            animation: scrollUp 12s linear infinite;
+        }
+
+        @keyframes scrollUp {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            font-family: Arial, sans-serif;
+        }
+
+        footer strong {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo"></div>
+
+    <div class="slogan">Ta parole vaut de l’or. Utilise-la. 🎤 ⚖️ 🏦</div>
+
+    <div class="description-container">
+        <div class="description">
+            Média de vulgarisation économique pour les jeunes. Stars de l’éco rend les enjeux économiques accessibles, passionnants et engagés pour une nouvelle génération d’esprits critiques. Ici, pas de jargon inutile, pas de ton professoral : juste l'essentiel, expliqué avec clarté, style et engagement.
+        </div>
+    </div>
+
+    <footer>
+        <strong>Hana-Lisa HAIT</strong>, cofondatrice<br>
+        Contact : hana.lisa@email.com
+    </footer>
+
+</body>
+</html>
